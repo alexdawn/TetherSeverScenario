@@ -1,0 +1,123 @@
+\documentclass[twocolumn,prl,nobalancelastpage,aps,10pt]{revtex4-1}
+%\documentclass[rmp,preprint]{revtex4-1}
+\usepackage{graphicx,bm,times}
+
+\begin{document}
+
+\title{Damage mitigation/elimination and infrastructure recovery in lunar elevator counterweight severance scenario}
+
+\author{A. W. Dawn MSci TPS CIHT, N. J. Isber BS BA}
+
+\affiliation{Copernicus I, Liftport}
+
+\begin{abstract} An essential design consideration in the construction of a nearside lunar elevator is in the positioning of the counterweight used to maintain tension in the tether. Position is dependent on tidal forces, tension requirements, limits on ultimate tensile strength of tether and the available mass for the counter weight. This paper details the additional restriction in altitude of the counter weight to ensure than in the event of the tether breaking that the resultant orbit the counter weight will enter will have perapsis at an altitude above that of the earth's atmosphere and common satellite orbits. This restriction will require a increase in mass of the counter-weight the alternative system explored is a active system of orbital manoeuvres that will allow the counter weight to be placed in an orbit that would otherwise impact Earth.
+
+\end{abstract}
+\date{\today}
+
+\maketitle
+
+\section{INTRODUCTION}
+
+The issue of large mass objects impacting earth has been much explored the gravitation well produces a lower limit on impact velocity. "Rods from God" and meteorites are two examples of extremely serious kinetic impacts. Initial calculations of the impact put the impact at $~ 10 kT$ of TNT, a destructive force able to destroy a city. With space law (cite this) placing unlimited liability of damages on the owner, such an impact will have unacceptable monetary cost even if the owner were to ignore the public outrage, loss of life, environmental damage, political repercussion and loss of the most costly component in of the elevator in terms of mass and hence cost.
+
+A design that prevent such a catastrophe is a mission critical with two initial options that will eliminate risk. There are two options available: an active or a passive system. A passive system has immediate advantages than an elevator can be designed so that severed parts will not enter a collision orbit and is hence not reliant on an active system that could suffer from component failure.
+
+\section{KINETIC IMPACT}
+
+Worst case scenario is a counter weight just on the nearside of L1 starting from stationary, the potential energy is given as, a real case will never be this bad as at L1 the counter weight will have sufficient velocity to remain orbital:
+\begin{equation}
+E.P = - \frac{GMm}{r}
+\end{equation}
+as the object falls this potential is converted into kinetic energy given the equation:
+\begin{equation}
+\Delta E = \frac{GMm}{r_i} - \frac{GMm}{r_e}
+\end{equation}
+where $r_e$ is the radius of the earth and $r_i$ is the initial position. Solving this equation gives $14 kTon$ of TNT per ton of counter weight. Not only is the impact catastrophic the calculation is also true in reverse that the same energy is required to lift the counter-weight into position, this is a significant amount of energy and is likely to be the single highest mission cost. A mission undertaking is unlikely to have the budget to build and launch a replacement counter-weight, hence recovery and repair is essential to prevent mission failure.
+
+\section{DAMAGE MITIGATION OF ELEVATOR}
+
+There are three objects along to tether: the counter weight, L1 Station, and the climber. The scenario is dependent on the position of the elevator and the location of the severance. The most likely point of tether failure is at low altitudes where micrometeorite impact and thermal fatigue due to the extreme temperature difference in the lunar day/night cycle. There different scenarios are presented in the table below:
+
+\begin{table}[h!]
+  \begin{center}
+    \caption{Severance Scenarios}
+    \label{tab:scenarios}
+    \begin{tabular}{|p{0.25\linewidth}|p{0.25\linewidth}|p{0.25\linewidth}}
+      \hline
+      Situation & Climber Low & Cliber High\\
+      \hline
+      Severed Above L1 & Jettison below L1, climber detaches and initiates powered landing or orbital insertion as suited. & Sever tether below climber, stabilise climber and L1 system.\\
+      \hline
+      Severed Below L1 & Jettison part/all of counter weight, stabilise L1 and initiates powered landing or orbital insertion as suited. & Jettison part/all of counter weight, stabilise climber and L1 system \\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Severance below the L1 station will require part or all of the counterweight to be detached for the remaining system to have a centre of mass at L1. If the elevator climber is below the sever point to avoid being "dragged down" with the tether it will detach and enter a lunar orbit or require a powered landing (an essential safety feature for a human rated climber) depending on its altitude. Below the height required for stable orbit will also have the option of powered landing or orbital burn to enter an orbit.
+
+Severance above the L1 station will either constant require thrust to maintain tension or jettison of the lower cable and/or climber.
+
+All three objects are recoverable.Small sections of tether will also remain but replacement will be better than repair to avoid weak points. As the tether is purely material the construction cost is marginal compared to the complexity in the objects which are each effectively a spacecraft.
+
+\section{ORBITAL MECHANICS OF PASSIVE DESIGN}
+
+Using Newtonian mechanics it is possible from the initial conditions required by a lunar counter weight to calculate the orbit the weight would enter. This orbit is a function of counter-weight altitude which becomes the apoapsis, and the initial velocity equal to $r\dot{\theta}$ where $\dot{\theta}$. From this condition it is possible calculate the closest approach to the earth periapsis.
+
+This calculation was verified in a numerical simulation using NASA's GMAT to account for perturbation due to the moon using a 3 body system. The effect of the Moon aids the passive design and will narrowly avoid the earth where an analytical model would impact the earth.
+
+\section{MISSION PROFILE OF ACTIVE DESIGN}
+
+Below the safe threshold height the counter weight would have to burn progade at the moment of severance avoid collision with the earth, a second burn at closest approach will allow to return the counter weight to L1 where a final burn will allow the weight to remain there until the tether can be repaired. The $\Delta V$ requirements are dependent on the position of the counter weight. These three manoeuvres are all Hohmann transfer orbits and are considered first for their simplicity and fuel efficiency the later an essential requirement due to the large mass of the counter weight. A continuous burn with a low thrust and high specific impulse engine may more fuel efficient.
+
+One design saving that is possible is having part of the tether mass as fuel, however this would then require the repair at L1 to involve refuelling.
+
+\section{SIMULATION DETAILS}
+
+Here you should describe how the experiment was done but again avoid trivial details.  If appropriate, include a
+diagram of the experimental apparatus. All figures should normally be drawn by the author of the report - not copied
+from the web or other students work.  If they are copied from somewhere (in whole or in part) then the source should be
+clearly referenced.
+
+\section{RESULTS}
+
+Graphs or tables of the actual data obtained should be put in here.  You need to think here about the correct balance
+between showing all the relevant data you have obtained and conserving space.  If there are a lot of different curves
+consider either showing them together on one plot, or only showing example curves (if they all look very similar).  It
+is usually important to show some raw data even if it is just an example, so that the reader can get a better idea of
+the experimental method.  Normally it is better to show data on a graph, rather than in a table. You should not
+normally do both.  The exception is where there are just a few data points, or no obvious independent variable: for
+example, if you had measured the thermal expansion coefficient for 4 different materials, this data summary would be
+best shown in a table.
+
+\section{DISCUSSION}
+
+One of the deciding factors is the difference in mass requirements of an active and passive system...
+
+%todo add comparison of models
+
+however reliability is of essential importance so (despite/additionally) to mass requirements a passive solution is the best option. This has the added benefit of a shorter tether.
+
+Fuel and replacement material costs will be strongly dependent on where the resources can be sourced from. If the elevator had been operational long enough for the L1 station to accumulate fuel process from lunar volatiles the active system would be far cheaper than if fuel had to be sourced from Earth.
+
+\section{CONCLUSIONS}
+
+While tether severance is a legitimate concern, the lunar elevator can be designed so that earth impact can be eliminated. A passive design is attractive as there is not possibility of component failure resulting in earth impact. The exact position of the tether should also be positioned so that the orbital period of the severed tether and the lunar period is an integer ratio so that the tether is on a free return to its original location where it can be repaired.
+
+\section{REFERENCES}
+\bibliography{LunarElavatorCounterWeight}
+\begin{thebibliography}{99}
+\bibitem{white73} \textit{Thermal expansion of reference materials: copper, silica and silicon}, G. K. White,  Journal of Physics D: Applied. Physics  \textbf{6}, 2070 (1973).
+
+\bibitem{epr} \textit{Can quantum-mechanical description of physical reality be considered complete?}, A. Einstein, B. Podolsky, N. Rosen, Physical Review \textbf{47}, 0777, (1935).
+
+\bibitem{feynman} \textit{Forces in molecules}, R.P. Feynman, Physical Review \textbf{56}, 340, (1939).
+
+\bibitem{anderson} \textit{The resonating valence bond state in La$_2$CuO$_4$ and superconductivity} Science \textbf{235}, 1196, (1987).
+
+\end{thebibliography}
+
+
+
+\end{document}
